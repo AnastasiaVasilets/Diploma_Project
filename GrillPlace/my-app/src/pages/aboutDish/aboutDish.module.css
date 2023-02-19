@@ -1,0 +1,265 @@
+.wrap {
+    padding: 0 150px 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 36px;
+    font-size: 38px;
+}
+
+.up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_wrap {
+    margin-right: 20px;
+    min-width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.img_wrap img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.about {
+    color: #3d4534;
+    margin-bottom: 15px;
+}
+
+.delete, .add {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.delete li, .add li{
+    display: inline-block;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 400;
+    color: #3d4534;
+    margin-left: 7px;
+}
+
+.add li{
+    margin-bottom: 15px;
+}
+
+.delete li:hover {
+    text-decoration: line-through 2px red;
+}
+
+.add li:hover {
+    text-decoration: underline 2px rgb(93, 178, 93);
+}
+
+.price {
+    text-align: end;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back_btn {
+    width: 210px;
+    height: 55px;
+    background-color: #fff;
+    color: #ddd;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: 0.25s;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.back_btn:hover {
+    background-color: #111;
+    border: none;
+    color: #fff;
+}
+
+.add_btn {
+    width: 210px;
+    height: 55px;
+    background-color: #505e4c;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: 0.25s;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.add_btn:hover {
+    background-color:#3d4534
+}
+
+.dish_block__selector{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    background-color:#f3f3f3;
+    border-radius:10px;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    flex-grow: 1;
+    padding:6px;
+    margin-bottom: 20px;
+}
+    
+.dish_block__selector ul{
+    display:flex
+}
+    
+.dish_block__selector ul:first-of-type{
+    margin-bottom:6px
+}
+    
+.dish_block__selector ul li{
+    padding:8px;
+    flex:1;
+    cursor:pointer;
+    font-weight:600;
+    font-size:14px;
+    user-select:none;
+    text-align: center
+}
+    
+.dish_block__selector ul li.active{
+    background:#ffffff;
+    box-shadow:0px 2px 4px rgba(0,0,0,0.04);
+    border-radius:5px;
+    cursor:auto
+}
+
+
+@media (max-width: 1300px) {
+    .wrap{
+        padding: 0 0px 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrap{
+        padding: 0 0px 10px;
+    }
+    .img_wrap {
+        margin-right: 10px;
+        min-width: 300px;
+        height: 300px;
+}
+}
+
+@media (max-width: 800px) {
+    .img_wrap {
+        margin-right: 10px;
+        min-width: 200px;
+        height: 200px;
+    }
+    .about {
+        font-size: 15px;
+    }
+    .title {
+        font-size: 34px;
+    }
+    .price {
+        font-size: 22px;
+    }
+    .back_btn {
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px){
+    .up {
+        flex-direction: column;
+    }
+    .img_wrap {
+        margin-right: 0;
+        margin-bottom: 10px;
+        min-width: 300px;
+        height: 300px;
+    }
+    .title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .back_btn {
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .price {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 450px){
+        .img_wrap {
+        margin-right: 0;
+        margin-bottom: 10px;
+        min-width: 200px;
+        height: 300px;
+    }
+    .back_btn {
+        width: 130px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .delete, .add {
+        font-size: 14px;
+    }
+    .add li{
+        margin-bottom: 3px;
+    }
+    .price {
+        font-size: 18px;
+    }
+    .title {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    .about {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media (max-width: 350px){
+    .img_wrap {
+    margin-right: 0;
+    margin-bottom: 10px;
+    min-width: 200px;
+    height: 250px;
+    }
+    .btns {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,13 @@
+.cart__empty {
+    width: 100%;
+    margin-bottom: 30px
+}
+
+.cart__empty h2, p{
+    display: block;
+    text-align: center;
+}
+
+.cart__empty h2 {
+    margin-bottom: 15px;
+}

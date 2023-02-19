@@ -1,0 +1,29 @@
+.button__black {
+    background-color:#232323;
+    display:inline-block;
+    border-radius:30px;
+    padding:10px 20px;
+    min-width:100px;
+    text-align:center;
+    cursor:pointer;
+    -webkit-transition:background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition:background-color .15s ease-in-out,border-color .15s ease-in-out;
+    border:1px solid transparent;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+    
+.button__black:hover,.button__black:active{
+    background-color:#3d3d3d
+}
+
+.button__black span{
+    color:#fff}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+}
