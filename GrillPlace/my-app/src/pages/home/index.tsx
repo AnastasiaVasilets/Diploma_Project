@@ -61,9 +61,9 @@ const Home: React.FC = () => {
       navigate(`/?${queryString}`)
     }
 
-    if (!window.location.search) {
-      dispatch(fetchDishes({} as SearchDishParams))
-    }
+//     if (!window.location.search) {
+//       dispatch(fetchDishes({} as SearchDishParams))
+//     }
   }, [categoryId, sort.sortProperty, searchValue, currentPage]);
 
 //Проверка первого рендера. Если он был, то идет проверка URL-параметров и сохранение
