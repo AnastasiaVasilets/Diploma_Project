@@ -199,10 +199,16 @@
     .price {
         font-size: 22px;
     }
-    .back_btn {
+    .back_btn, .add_btn {
         width: 180px;
         height: 50px;
         font-size: 20px;
+    }
+    .add_btn b{
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
+        padding-right: 2px;
     }
 }
 
@@ -220,10 +226,16 @@
         font-size: 30px;
         margin-bottom: 20px;
     }
-    .back_btn {
-        width: 180px;
+    .back_btn, .add_btn {
+        width: 160px;
         height: 50px;
         font-size: 20px;
+    }
+    .add_btn b{
+        width: 18px;
+        height: 18px;
+        font-size: 14px;
+        padding-right: 1px;
     }
     .price {
         margin-bottom: 20px;
@@ -237,8 +249,8 @@
         min-width: 200px;
         height: 300px;
     }
-    .back_btn {
-        width: 130px;
+    .back_btn, .add_btn {
+        width: 100px;
         height: 40px;
         font-size: 16px;
     }
@@ -267,8 +279,5 @@
     margin-bottom: 10px;
     min-width: 200px;
     height: 250px;
-    }
-    .btns {
-        justify-content: center;
     }
 }
